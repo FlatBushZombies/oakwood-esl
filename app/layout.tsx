@@ -66,7 +66,7 @@ export default function RootLayout({
                 href="/contact"
                 className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:opacity-90 transition"
               >
-                Enrol Now
+                Enroll Now
               </Link>
             </div>
           </div>
