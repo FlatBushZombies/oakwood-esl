@@ -47,13 +47,13 @@ export default function RootLayout({
                 <div className="rounded-lg flex items-center justify-center text-primary-foreground font-bold">
                   <Image
                   alt="Oakwood "
-                  src="/oakwood-banner.png"
+                  src="/oakwood-logo.png"
                   width={90}
                   height={90}
                   priority
                   />
                 </div>
-                <span className="font-bold text-xl text-primary hidden sm:inline">ESL</span>
+                <span className="font-bold text-xl text-primary hidden sm:inline"></span>
               </Link>
               <div className="hidden md:flex items-center gap-8">
                 <Link href="/" className="text-foreground/70 hover:text-foreground transition">

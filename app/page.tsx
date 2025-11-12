@@ -8,9 +8,9 @@ import { FaUsers, FaClock, FaBolt, FaGlobe } from "react-icons/fa";
 import { ExperiencesSection } from "./components/experience-section"
 
 const images = [
-  "/assets/photo_2025-11-09_11-29-26.jpg",
-  "/assets/photo_2025-11-09_11-29-46.jpg",
-  "/assets/photo_2025-11-09_11-29-57.jpg",
+  "/assets/photo_2025-11-09_11-30-03.jpg",
+  "/assets/photo_2025-11-09_11-30-37.jpg",
+  "/assets/photo_2025-11-09_11-30-50.jpg",
   "/assets/photo_2025-11-09_11-29-30.jpg",
 ]
 
@@ -137,9 +137,9 @@ export default function Home() {
       {[
         {
           icon: FaUsers,
-          title: "Expert Teachers",
+          title: "Talented Native English teachers",
           description:
-            "Highly skilled and friendly instructors who help students communicate naturally and confidently.",
+            "Our talented, dedicated teachers prioritise helping students communicate in English in a natural manner.",
         },
         {
           icon: FaClock,

@@ -3,12 +3,20 @@ import Link from 'next/link'
 import { FaVaadin, FaVk } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { TbBrandInstagramFilled } from "react-icons/tb";
+import Image from 'next/image';
 
 export default function Footer ()  {
   return (
       <footer id="contact" className="bg-foreground text-background py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <Image
+                alt="Oakwood "
+                src="/oakwood-footer.png"
+                width={90}
+                height={90}
+                priority
+            />
             <div>
               <h3 className="font-bold text-lg mb-4">About Us</h3>
               <p className="text-background/80">
@@ -56,7 +64,7 @@ export default function Footer ()  {
             </div>
           </div>
           <div className="border-t border-background/20 pt-8 text-center text-background/70">
-            <p>&copy; 2025 sname. All rights reserved.</p>
+            <p>&copy; 2025 Oakwood ESL. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -37,7 +37,7 @@ const courses = [
     ],
     price: "₽1,500",
     trial: "₽750",
-    highlight: true,
+    highlight: false,
   },
   {
     id: "club",
