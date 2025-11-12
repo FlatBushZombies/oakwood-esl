@@ -1,9 +1,9 @@
 import type React from "react"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import Footer from "./components/footer"
+import Footer from "@/components/footer"
 import "./globals.css"
-import ClientLayout from "./components/client-layout"
+import ClientLayout from "@/components/client-layout"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })

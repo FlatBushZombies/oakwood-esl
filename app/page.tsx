@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, Users, Clock, Zap, Globe } from "lucide-react"
 import { FaUsers, FaClock, FaBolt, FaGlobe } from "react-icons/fa";
-import { ExperiencesSection } from "./components/experience-section"
+import { ExperiencesSection } from "@/components/experience-section"
 
 const images = [
   "/assets/photo_2025-11-09_11-30-03.jpg",

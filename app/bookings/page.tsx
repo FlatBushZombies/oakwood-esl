@@ -21,6 +21,8 @@ export default function Booking() {
     goals: "",
     hearAboutUs: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -30,11 +32,48 @@ export default function Booking() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Booking submitted:", formData)
-    // Here you would typically send the data to your backend
-    alert("Booking request submitted! We'll contact you soon to confirm your trial lesson.")
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch("/api/send-booking", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          courseType: "",
+          level: "",
+          packageType: "",
+          preferredDate: "",
+          preferredTime: "",
+          goals: "",
+          hearAboutUs: "",
+        })
+        alert("Booking request submitted successfully! We'll contact you soon to confirm your trial lesson.")
+      } else {
+        setSubmitStatus("error")
+        alert("Failed to submit booking. Please try again or contact us via Telegram.")
+      }
+    } catch (error) {
+      console.error("Error submitting booking:", error)
+      setSubmitStatus("error")
+      alert("Failed to submit booking. Please try again or contact us via Telegram.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -341,9 +380,10 @@ export default function Booking() {
 
                   <button
                     type="submit"
-                    className="w-full bg-primary text-primary-foreground py-4 px-6 rounded-lg font-bold hover:shadow-lg transition-all duration-200 hover:opacity-90 flex items-center justify-center gap-2 text-lg"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-primary-foreground py-4 px-6 rounded-lg font-bold hover:shadow-lg transition-all duration-200 hover:opacity-90 flex items-center justify-center gap-2 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Book My Trial Lesson
+                    {isSubmitting ? "Submitting..." : "Book My Trial Lesson"}
                     <ArrowRight className="w-5 h-5" />
                   </button>
 
