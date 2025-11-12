@@ -12,6 +12,9 @@ const images = [
   "/assets/photo_2025-11-09_11-30-37.jpg",
   "/assets/photo_2025-11-09_11-30-50.jpg",
   "/assets/photo_2025-11-09_11-29-30.jpg",
+  "/assets/photo_2025-11-09_11-30-00.jpg",
+  "/assets/photo_2025-11-09_11-30-26.jpg",
+  "/assets/photo_2025-11-09_11-31-03.jpg"
 ]
 
 export default function Home() {
