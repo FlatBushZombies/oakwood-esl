@@ -57,7 +57,7 @@ export default function Footer ()  {
                 <a href="#" className="hover:text-background transition">
                   <FaTelegramPlane size={24} color='white' />
                 </a>
-                <a href="#" className="hover:text-background transition">
+                <a href="https://www.instagram.com/oakwoodesl/" className="hover:text-background transition">
                   <TbBrandInstagramFilled size={24} color='white'/>
                 </a>
               </div>

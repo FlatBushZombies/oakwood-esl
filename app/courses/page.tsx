@@ -1,10 +1,11 @@
 import Link from "next/link"
-import { BookOpen, Users, Mic, ArrowRight, CheckCircle } from "lucide-react"
+import { BookOpen, Users, Mic, ArrowRight, CheckCircle } from 'lucide-react'
 import { TiBook } from "react-icons/ti"
 import { CiBookmarkCheck } from "react-icons/ci";
 import { GiTeacher } from "react-icons/gi";
 import { LiaHourglassStartSolid } from "react-icons/lia";
 import { MdRecommend } from "react-icons/md";
+import Image from "next/image"
 
 const courses = [
   {
@@ -54,6 +55,37 @@ const courses = [
     price: "₽1,500",
     trial: "₽750",
     highlight: false,
+  },
+]
+
+const courseBooks = [
+  {
+    id: 1,
+    title: "Level One",
+    subtitle: "Phonemic Awareness",
+    image: "/assets/books/IMG-20251113-WA0001.jpg",
+    color: "from-orange-400 to-yellow-500",
+  },
+  {
+    id: 2,
+    title: "Coloring Book",
+    subtitle: "Phonemic Awareness",
+    image: "/assets/books/IMG-20251113-WA0002.jpg",
+    color: "from-green-400 to-emerald-500",
+  },
+  {
+    id: 3,
+    title: "Level Two",
+    subtitle: "Phonemic Awareness",
+    image: "/assets/books/IMG-20251113-WA0000.jpg",
+    color: "from-cyan-400 to-blue-500",
+  },
+  {
+    id: 4,
+    title: "Level Three",
+    subtitle: "Phonemic Awareness",
+    image: "/assets/books/IMG-20251113-WA0003.jpg",
+    color: "from-pink-400 to-rose-500",
   },
 ]
 
@@ -132,6 +164,40 @@ export default function Courses() {
                     Learn More
                     <ArrowRight size={16} />
                   </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 bg-gradient-to-b from-muted/30 to-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Course Books</h2>
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+              Comprehensive workbooks designed to build strong phonemic awareness and reading skills
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {courseBooks.map((book) => (
+              <div
+                key={book.id}
+                className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <div className="aspect-[3/4] relative bg-gradient-to-br overflow-hidden">
+                  <Image
+                    src={book.image || "/placeholder.svg"}
+                    alt={`${book.title} - ${book.subtitle}`}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-white font-bold text-lg">{book.title}</h3>
+                  <p className="text-white/80 text-sm">{book.subtitle}</p>
                 </div>
               </div>
             ))}
