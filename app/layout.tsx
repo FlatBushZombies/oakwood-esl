@@ -4,9 +4,16 @@ import { Analytics } from "@vercel/analytics/next"
 import Footer from "@/components/footer"
 import "./globals.css"
 import ClientLayout from "@/components/client-layout"
+import { Metadata } from "next"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
+
+
+export const metadata: Metadata = {
+  title: "Oakwood",
+  description: "Empowering English learners with modern, immersive language training at Oakwood ESL School",
+};
 
 export default function RootLayout({
   children,
