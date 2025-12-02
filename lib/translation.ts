@@ -18,7 +18,7 @@ export const translations = {
       hero: {
         title: 'Научитесь общаться на английском с настоящими носителями ',
         titleHighlight: 'языка',
-        subtitle: 'Изучение английского языка с очень современным',
+        subtitle: 'Изучение английского языка современным способом',
         exploreCourses: 'Изучить курсы',
         contactTelegram: 'Связаться в Telegram'
       },
@@ -430,7 +430,7 @@ export const translations = {
       hero: {
         title: 'Learn how to communicate in English with real native',
         titleHighlight: 'speakers',
-        subtitle: 'English learning with a very modern edge',
+        subtitle: 'English learning with a very modern edge',
         exploreCourses: 'Explore Courses',
         contactTelegram: 'Contact on Telegram'
       },
