@@ -191,7 +191,7 @@ export const translations = {
         feature: 'Функция',
         personalizedCurriculum: 'Персонализированная программа',
         oneOnOne: 'Индивидуальные сессии',
-        groupInteraction: 'Групповое взаимодействие',
+        groupInteraction: 'Групповое взаимодействие (2-3 студента)',
         flexibleScheduling: 'Гибкое расписание',
         progressReports: 'Отчеты о прогрессе',
         speakingPractice: 'Разговорная практика'
@@ -429,7 +429,7 @@ export const translations = {
       badge: 'Speak Fluently ✨',
       hero: {
         title: 'Learn how to communicate in English with real native',
-        titleHighlight: 'speakers',
+        titleHighlight: ' speakers',
         subtitle: 'English learning with a very modern edge',
         exploreCourses: 'Explore Courses',
         contactTelegram: 'Contact on Telegram'
@@ -603,7 +603,7 @@ export const translations = {
         feature: 'Feature',
         personalizedCurriculum: 'Personalized Curriculum',
         oneOnOne: 'One-on-One Sessions',
-        groupInteraction: 'Group Interaction',
+        groupInteraction: 'Group Interaction (2-3 Students)',
         flexibleScheduling: 'Flexible Scheduling',
         progressReports: 'Progress Reports',
         speakingPractice: 'Speaking Practice'

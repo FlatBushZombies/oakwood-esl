@@ -56,7 +56,7 @@ export default function Pricing() {
 
     {
       id: "group",
-      name: language === "ru" ? "Групповые уроки" : "Group Lessons",
+      name: language === "ru" ? "Групповые уроки (2-3 студента)" : "Group Lessons (2-3 Students)",
       description: language === "ru" ? "Экономичное обучение с взаимодействием со сверстниками" : "Cost-effective learning with peer interaction",
       basePrice: 1500,
       trialPrice: 750,
