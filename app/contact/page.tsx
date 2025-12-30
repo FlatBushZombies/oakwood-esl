@@ -151,10 +151,10 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-foreground mb-3">{t.email.title}</h3>
                 <p className="text-foreground/70 mb-6 text-sm leading-relaxed">{t.email.description}</p>
                 <a
-                  href="mailto:hello@sname.com"
+                  href="mailto:oakwoodesl@mail.ru"
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                 >
-                  hello@oakwoodesl.com
+                  oakwoodesl@mail.ru
                   <span>→</span>
                 </a>
               </div>

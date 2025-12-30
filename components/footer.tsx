@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4">{t.contact}</h3>
-            <p className="text-background/80">Email: hello@oakwood.com</p>
+            <p className="text-background/80">Email: oakwoodesl@mail.ru</p>
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4">{t.followUs}</h3>
@@ -59,7 +59,7 @@ export default function Footer() {
               <a href="https://vk.com/club234358789" className="hover:text-background transition">
                 <FaVk size={24} color='white' />
               </a>
-              <a href="https://t.me/+JHwfsOY7k-YzMTFi" className="hover:text-background transition" target='_blank'>
+              <a href="https://t.me/@oakwoodesl" className="hover:text-background transition" target='_blank'>
                 <FaTelegramPlane size={24} color='white' />
               </a>
               <a href="https://www.instagram.com/oakwoodesl/" className="hover:text-background transition" target='_blank'>
