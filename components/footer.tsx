@@ -59,7 +59,7 @@ export default function Footer() {
               <a href="https://vk.com/club234358789" className="hover:text-background transition">
                 <FaVk size={24} color='white' />
               </a>
-              <a href="https://t.me/@oakwoodesl" className="hover:text-background transition" target='_blank'>
+              <a href="https://t.me/oakwoodesl" className="hover:text-background transition" target='_blank'>
                 <FaTelegramPlane size={24} color='white' />
               </a>
               <a href="https://www.instagram.com/oakwoodesl/" className="hover:text-background transition" target='_blank'>
