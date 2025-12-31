@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link"
 import Hero from "@/components/hero"
 import { ExperiencesSection } from "@/components/experience-section"
 import { translations } from "@/lib/translation"
+import { useLanguage } from "@/contexts/language-context"
 
 type Feature = {
   title: string
@@ -9,7 +12,7 @@ type Feature = {
 }
 
 export default function HomePage() {
-  const language = "en" // resolve from cookies/headers if needed
+  const { language } = useLanguage()
   const t = translations[language].home
 
   const features: Feature[] = [
