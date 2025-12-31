@@ -133,7 +133,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-foreground mb-3">{t.telegram.title}</h3>
                 <p className="text-foreground/70 mb-6 text-sm leading-relaxed">{t.telegram.description}</p>
                 <a
-                  href="https://t.me/+JHwfsOY7k-YzMTFi"
+                  href="https://@oakwoodesl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"

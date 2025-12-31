@@ -72,7 +72,7 @@ export default function HeroSlider() {
                 {t.hero.exploreCourses}
               </Link>
               <Link
-                href="https://t.me/+JHwfsOY7k-YzMTFi"
+                href="https://@oakwoodesl"
                 className="bg-white/20 text-white border border-white/50 px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition inline-block backdrop-blur-sm"
               >
                 {t.hero.contactTelegram}
