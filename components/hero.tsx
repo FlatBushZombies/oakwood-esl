@@ -29,7 +29,7 @@ export default function HeroSlider() {
   }, [])
 
   return (
-    <div className="relative w-full h-[60vh] sm:h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-[80vh] sm:h-screen bg-black overflow-hidden">
       {images.map((src, index) => (
         <div
           key={src}
@@ -50,7 +50,6 @@ export default function HeroSlider() {
         </div>
       ))}
 
-      {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
 
       <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -68,18 +67,17 @@ export default function HeroSlider() {
             {t.hero.subtitle}
           </p>
 
-          {/* ✅ BUTTONS SIDE-BY-SIDE ON MOBILE */}
-          <div className="flex flex-row sm:flex-row gap-3 justify-center">
+          <div className="flex gap-4 justify-center px-2">
             <Link
               href="/courses"
-              className="w-1/2 sm:w-auto bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold hover:opacity-90 transition text-center"
+              className="w-1/2 bg-primary text-primary-foreground px-4 py-4 rounded-xl font-semibold hover:opacity-90 transition text-center"
             >
               {t.hero.exploreCourses}
             </Link>
 
             <Link
               href="https://t.me/oakwoodesl"
-              className="w-1/2 sm:w-auto bg-white/20 text-white border border-white/50 px-4 py-3 rounded-lg font-semibold hover:bg-white/30 transition backdrop-blur-sm text-center"
+              className="w-1/2 bg-white/20 text-white border border-white/50 px-4 py-4 rounded-xl font-semibold hover:bg-white/30 transition backdrop-blur-sm text-center"
             >
               {t.hero.contactTelegram}
             </Link>
