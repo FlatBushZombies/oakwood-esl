@@ -36,7 +36,6 @@ export default function HeroSlider() {
           className={`absolute inset-0 transition-opacity duration-700 ${
             index === current ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
-          style={{ willChange: "opacity" }}
         >
           <Image
             src={src}
@@ -53,34 +52,40 @@ export default function HeroSlider() {
 
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+
       <div className="absolute inset-0 flex items-center justify-center z-20">
-          <div className="text-center text-white max-w-2xl px-4">
-            <div className="inline-block bg-blue-500/30 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 mb-6">
-              <span className="text-sm font-medium">{t.badge}</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
-              {t.hero.title} <span className="text-blue-300">{t.hero.titleHighlight}</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 text-pretty">
-              {t.hero.subtitle}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/courses"
-                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition inline-block"
-              >
-                {t.hero.exploreCourses}
-              </Link>
-              <Link
-                href="https://@oakwoodesl"
-                className="bg-white/20 text-white border border-white/50 px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition inline-block backdrop-blur-sm"
-              >
-                {t.hero.contactTelegram}
-              </Link>
-            </div>
+        <div className="text-center text-white max-w-2xl px-4">
+          <div className="inline-block bg-blue-500/30 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 mb-6">
+            <span className="text-sm font-medium">{t.badge}</span>
+          </div>
+
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
+            {t.hero.title}{" "}
+            <span className="text-blue-300">{t.hero.titleHighlight}</span>
+          </h1>
+
+          <p className="text-xl md:text-2xl mb-8 text-blue-100 text-pretty">
+            {t.hero.subtitle}
+          </p>
+
+          {/* ✅ BUTTONS SIDE-BY-SIDE ON MOBILE */}
+          <div className="flex flex-row sm:flex-row gap-3 justify-center">
+            <Link
+              href="/courses"
+              className="w-1/2 sm:w-auto bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold hover:opacity-90 transition text-center"
+            >
+              {t.hero.exploreCourses}
+            </Link>
+
+            <Link
+              href="https://t.me/oakwoodesl"
+              className="w-1/2 sm:w-auto bg-white/20 text-white border border-white/50 px-4 py-3 rounded-lg font-semibold hover:bg-white/30 transition backdrop-blur-sm text-center"
+            >
+              {t.hero.contactTelegram}
+            </Link>
           </div>
         </div>
-
+      </div>
     </div>
   )
 }
