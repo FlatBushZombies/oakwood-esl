@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import Footer from "@/components/footer"
 import "./globals.css"
 import ClientLayout from "@/components/client-layout"
+import { Toaster } from "@/components/ui/sonner"
 import type { Metadata } from "next"
 import { LanguageProvider } from "@/contexts/language-context"
 
@@ -140,6 +141,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           />
         </LanguageProvider>
       </body>
+      <Toaster />
     </html>
   )
 }
