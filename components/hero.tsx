@@ -50,10 +50,11 @@ export default function HeroSlider() {
         </div>
       ))}
 
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
 
       <div className="absolute inset-0 flex items-center justify-center z-20">
-        <div className="text-center text-white max-w-2xl px-4">
+        <div className="text-center text-white max-w-2xl px-4 w-full">
           <div className="inline-block bg-blue-500/30 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 mb-6">
             <span className="text-sm font-medium">{t.badge}</span>
           </div>
@@ -63,21 +64,22 @@ export default function HeroSlider() {
             <span className="text-blue-300">{t.hero.titleHighlight}</span>
           </h1>
 
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 text-pretty">
+          <p className="text-xl md:text-2xl mb-10 text-blue-100 text-pretty">
             {t.hero.subtitle}
           </p>
 
-          <div className="flex gap-4 justify-center px-2">
+          {/* ✅ Buttons: stacked on mobile, wider, side-by-side on desktop */}
+          <div className="flex flex-col sm:flex-row w-full max-w-lg mx-auto gap-4">
             <Link
               href="/courses"
-              className="w-1/2 bg-primary text-primary-foreground px-4 py-4 rounded-xl font-semibold hover:opacity-90 transition text-center"
+              className="flex w-full sm:w-1/2 items-center justify-center min-h-[60px] bg-primary text-primary-foreground rounded-xl font-semibold hover:opacity-90 transition"
             >
               {t.hero.exploreCourses}
             </Link>
 
             <Link
               href="https://t.me/oakwoodesl"
-              className="w-1/2 bg-white/20 text-white border border-white/50 px-4 py-4 rounded-xl font-semibold hover:bg-white/30 transition backdrop-blur-sm text-center"
+              className="flex w-full sm:w-1/2 items-center justify-center min-h-[60px] bg-white/20 text-white border border-white/50 rounded-xl font-semibold hover:bg-white/30 transition backdrop-blur-sm"
             >
               {t.hero.contactTelegram}
             </Link>

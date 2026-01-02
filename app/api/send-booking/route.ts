@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: "English Lessons <onboarding@resend.dev>", // Replace with your verified domain
-      to: [process.env.NOTIFICATION_EMAIL || "makanjirabrian@gmail.com"], // Replace with your email
+      to: [process.env.NOTIFICATION_EMAIL || "lacksonjmaposa@gmail.com"], // Replace with your email
       replyTo: bookingData.email,
       subject: `New Booking Request from ${bookingData.firstName} ${bookingData.lastName}`,
       react: React.createElement(BookingEmailTemplate, { bookingData }),
