@@ -55,7 +55,7 @@ export const metadata: Metadata = {
       "Learn English with accredited instructors, immersive ESL programs, and international exam preparation.",
     images: [
       {
-        url: "https://oakwoodesl.com/oakwood-logo.png",
+        url: "/oakwood-logo.png",
         width: 1200,
         height: 630,
         alt: "Oakwood ESL School",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Oakwood English Language School",
     description: "Accredited English courses, ESL training, and IELTS/TOEFL preparation.",
-    images: ["https://oakwoodesl.com/oakwood-logo.png"],
+    images: ["/oakwood-logo.png"],
   },
   icons: {
     icon: "/favicon.ico",
